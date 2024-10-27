@@ -1,0 +1,18 @@
+replicaCount: 2
+
+image:
+  repository: denmax007/springboot-docker-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+env:
+  APP_MESSAGE: "Hello from Helm!"
+
+resources: {}  # Optional: Define resource limits and requests here
+
+serviceAccount:
+  create: true  # Ensure this is set if the serviceaccount.yaml references it

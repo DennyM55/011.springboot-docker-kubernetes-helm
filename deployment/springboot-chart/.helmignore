@@ -1,0 +1,5 @@
+# Ignore Helm-related files
+*.jar
+*.tgz
+.idea/
+target/

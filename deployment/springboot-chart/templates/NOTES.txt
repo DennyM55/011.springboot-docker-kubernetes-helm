@@ -1,0 +1,9 @@
+Your Spring Boot application has been successfully deployed!
+
+To access your service, run:
+
+  minikube service {{ include "springboot-chart.fullname" . }} --url
+
+Or use:
+
+  kubectl get svc
